@@ -96,6 +96,7 @@ class Grafo:
             print(f"Conexión: Nodo {origin} -- Nodo {destination}  (Costo: {weight})")
         print(f"---------------------------------------")
         print(f"COSTO MÍNIMO TOTAL: {costo_total}")
+        return resultado  
 
     # --- Algoritmo de Prim ---
     def prim_mst(self):
@@ -147,6 +148,7 @@ class Grafo:
 
         print(f"---------------------------------------")
         print(f"COSTO MÍNIMO TOTAL (PRIM): {costo_total}")
+        return mst_aristas 
 
 # --- BLOQUE DE PRUEBA ---
 if __name__ == "__main__":
